@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<%= link_to 'Back', products_path %>
+<p>
+  <strong>Title:</strong>
+  <%= @product.title %>
+</p>
+ <%= video_player({:file => @product.video.url,  :mute => true}, {:width => 440, :height => 300}) %>
+
+<%#= link_to 'Edit', edit_product_path(@product) %> 
